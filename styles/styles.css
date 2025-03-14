@@ -4,8 +4,8 @@
 }
 
 header {
+  background-color: #d8a952;
   display: flex;
-  background-color: rgb(212, 165, 130);
   height: 100%;
   padding: 3vh;
   gap: 6vw;
@@ -13,6 +13,7 @@ header {
 }
 
 header a {
+  z-index: 1000;
   padding: 1.3em 5em;
   font-size: 12px;
   text-transform: uppercase;
@@ -71,10 +72,10 @@ h1 {
 
 form {
   display: flex;
-  flex-direction: column; /* Располагаем элементы вертикально */
-  gap: 15px; /* Добавляем отступ между полями */
+  flex-direction: column;
+  gap: 15px;
   padding: 20px;
-  background: #ffd88f; /* Светлый фон */
+  background: #ffd88f;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -119,6 +120,38 @@ footer {
   margin: auto;
 }
 
+.hero {
+  margin-bottom: 100px;
+}
+
+.hero img {
+  width: 100vw;
+  height: 82vh;
+  opacity: 0.9;
+  filter: brightness(30%);
+}
+
+.hero a {
+  position: absolute;
+  top: 40%;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  color:#fff;
+  font-size: 35px;
+}
+
+.description {
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  right: 15%;
+  top: 54%;
+  width: 30%;
+}
 
 @keyframes tonext {
   75% {
